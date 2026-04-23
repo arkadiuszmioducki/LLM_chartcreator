@@ -1,0 +1,25 @@
+# ============================================================
+# LLM chart creator — requirements.txt
+# ============================================================
+
+# === Środowisko budowania C++ ===
+# CMake >= 3.16
+# Qt 6.4+   (Widgets, Network, Concurrent)
+# C++17 compiler (GCC 9+ / Clang 10+ / MSVC 2019+)
+# GoogleTest (pobierany automatycznie przez CMake FetchContent)
+
+# === Lokalne LLM ===
+# Ollama >= 0.1.0   https://ollama.com/
+# Model: gemma4:e2b  (ollama pull gemma4:e2b)
+# Alternatywy: bielik, llama3.2, mistral, phi3
+
+# === Python (do wykonania generowanego kodu) ===
+# Python >= 3.8
+
+matplotlib>=3.7.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# === Dokumentacja ===
+# Doxygen >= 1.9.0  (opcjonalne)
