@@ -48,7 +48,7 @@ ollama serve
 
 ### Linux / macOS
 ```bash
-git clone https://github.com/YOUR_USERNAME/LLM_chart-creator_tests.git
+git clone https://github.com/arkadiuszmioducki/LLM_chartcreator.git
 cd LLM_chartcreator
 
 mkdir build && cd build
