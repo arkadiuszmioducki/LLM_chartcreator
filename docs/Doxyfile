@@ -1,29 +1,56 @@
-PROJECT_NAME           = "LLM chart creator"
-PROJECT_NUMBER         = 1.0.0
-PROJECT_BRIEF          = "Generator kodu Python z wykorzystaniem lokalnego LLM (Ollama)"
+PROJECT_NAME           = "LLM Chart Creator"
+PROJECT_NUMBER         = 1.1.0
+PROJECT_BRIEF          = "Generator wykresow Python z lokalnym LLM (Ollama + gemma4:e2b)"
+PROJECT_LOGO           =
+
 OUTPUT_DIRECTORY       = docs/doxygen
-INPUT                  = src
+
+INPUT                  = src README.md
 RECURSIVE              = YES
+FILE_PATTERNS          = *.cpp *.h *.md
+EXTENSION_MAPPING      = h=C++ cpp=C++
+
 EXTRACT_ALL            = YES
 EXTRACT_PRIVATE        = YES
 EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
 GENERATE_HTML          = YES
-GENERATE_LATEX         = NO
 HTML_OUTPUT            = html
 HTML_COLORSTYLE        = LIGHT
-OPTIMIZE_OUTPUT_FOR_C  = NO
-HAVE_DOT               = NO
 GENERATE_TREEVIEW      = YES
 DISABLE_INDEX          = NO
-FULL_SIDEBAR           = NO
+FULL_SIDEBAR           = YES
 HTML_DYNAMIC_SECTIONS  = YES
-GENERATE_TODOLIST      = YES
-GENERATE_BUGLIST       = YES
+
+GENERATE_LATEX         = NO
+
 SOURCE_BROWSER         = YES
 INLINE_SOURCES         = NO
 STRIP_CODE_COMMENTS    = NO
-FILE_PATTERNS          = *.cpp *.h
+VERBATIM_HEADERS       = YES
+
 USE_MDFILE_AS_MAINPAGE = README.md
+
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+MULTILINE_CPP_IS_BRIEF = NO
+
+SHOW_FILES             = YES
+SHOW_NAMESPACES        = YES
+SHOW_INCLUDE_FILES     = YES
+
+ALPHABETICAL_INDEX     = YES
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = NO
+SORT_BY_SCOPE_NAME     = NO
+
+GENERATE_TODOLIST      = YES
+GENERATE_BUGLIST       = YES
+
 QUIET                  = NO
 WARNINGS               = YES
 WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+
+HAVE_DOT               = NO
